@@ -34,5 +34,3 @@ def test_one_outdated_products(
     mock_date_today.date.today.return_value = datetime.date(2022, 2, 1)
     product = product_details
     assert main.outdated_products(product) == []
-
-
